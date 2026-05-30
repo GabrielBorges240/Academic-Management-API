@@ -1,21 +1,22 @@
 # Academic Management API
 
-REST API for academic management built with Python and FastAPI.
+A RESTful API for academic management built with Python and FastAPI.
 
-This project provides a backend system for managing students, courses, enrollments, and academic records through a scalable API architecture.
+This project provides a scalable backend solution for managing students, courses, enrollments, and academic records through a modern API architecture.
 
 ---
 
 # Features
 
 * Student registration and management
-* Course creation and control
-* Enrollment system
-* CRUD operations
+* Course creation and management
+* Enrollment management system
+* Full CRUD operations
 * RESTful API architecture
-* JWT authentication
+* JWT-based authentication
 * Database integration
-* Input validation with Pydantic
+* Data validation with Pydantic
+* Scalable and modular structure
 
 ---
 
@@ -50,6 +51,8 @@ Academic-Management-API/
 └── README.md
 ```
 
+---
+
 # API Endpoints
 
 ## Students
@@ -68,32 +71,32 @@ Academic-Management-API/
 
 ## Enrollments
 
-* `POST /enrollments`
 * `GET /enrollments`
+* `POST /enrollments`
 
 ---
 
 # Installation
 
-## Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Academic-Management-API.git
 ```
 
-## Access the project folder
+## Navigate to the Project Directory
 
 ```bash
 cd Academic-Management-API
 ```
 
-## Install dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run the application
+## Run the Application
 
 ```bash
 uvicorn app.main:app --reload
@@ -103,13 +106,13 @@ uvicorn app.main:app --reload
 
 # Docker
 
-## Build the container
+## Build the Docker Image
 
 ```bash
 docker build -t academic-api .
 ```
 
-## Run the container
+## Run the Docker Container
 
 ```bash
 docker run -p 8000:8000 academic-api
@@ -121,15 +124,15 @@ docker run -p 8000:8000 academic-api
 
 FastAPI automatically generates interactive API documentation.
 
-Swagger UI:
+### Swagger UI
 
-```bash
+```text
 http://127.0.0.1:8000/docs
 ```
 
-ReDoc:
+### ReDoc
 
-```bash
+```text
 http://127.0.0.1:8000/redoc
 ```
 
@@ -137,17 +140,19 @@ http://127.0.0.1:8000/redoc
 
 # Future Improvements
 
-* Role-based access control
-* Email notifications
+* Role-Based Access Control (RBAC)
+* Email notification system
 * PostgreSQL support
 * Automated testing
-* CI/CD pipeline
-* Docker Compose integration
+* CI/CD pipeline integration
+* Docker Compose setup
+* API rate limiting
+* Audit logging
 
 ---
 
 # Author
 
-Gabriel Borges
+**Gabriel Borges**
 
-Backend Developer focused on APIs and AI-powered applications.
+Backend Developer focused on API development, software architecture, and AI-powered applications.
